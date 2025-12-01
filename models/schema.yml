@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: marts
+    schema: marts
+    tables:
+      - name: fct_chv_activity
+
+models:
+  - name: chw_activity_monthly
+    description: "Monthly aggregation of CHW activities"
+    columns:
+      - name: chv_id
+        tests: [not_null]
+      - name: report_month
+        tests: [not_null]
+      - name: total_activities
+        tests: [not_null]

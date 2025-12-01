@@ -1,0 +1,1768 @@
+[0m13:58:22.035874 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f94c2416c00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f94c21fe540>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f94c22a95b0>]}
+
+
+============================== 13:58:22.063424 | 7cdca913-0a94-4664-a843-00506bb348aa ==============================
+[0m13:58:22.063424 [info ] [MainThread]: Running with dbt=1.10.15
+[0m13:58:22.067147 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'version_check': 'True', 'static_parser': 'True', 'log_path': 'logs', 'printer_width': '80', 'partial_parse': 'True', 'invocation_command': 'dbt init .', 'introspect': 'True', 'log_format': 'default', 'no_print': 'None', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'write_json': 'True', 'fail_fast': 'False', 'profiles_dir': '/home/mainavm/.dbt', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'empty': 'None', 'debug': 'False', 'quiet': 'False', 'indirect_selection': 'eager'}
+[0m13:58:22.111272 [info ] [MainThread]: Creating dbt configuration folder at /home/mainavm/.dbt
+[0m13:59:34.917081 [debug] [MainThread]: Starter project path: /home/mainavm/chw_activity_project/venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m13:59:34.929786 [info ] [MainThread]: 
+Your new dbt project "chw_activity_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:59:34.931047 [info ] [MainThread]: Setting up your profile.
+[0m14:12:24.119837 [info ] [MainThread]: Profile chw_activity_project written to /home/mainavm/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:12:24.156081 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 842.3171, "process_in_blocks": "1272", "process_kernel_time": 0.857941, "process_mem_max_rss": "104372", "process_out_blocks": "88", "process_user_time": 5.199961}
+[0m14:12:24.164954 [debug] [MainThread]: Command `dbt init` succeeded at 14:12:24.164380 after 842.33 seconds
+[0m14:12:24.167022 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f94c35fa960>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f94c1ac3830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f94c22766f0>]}
+[0m14:12:24.169246 [debug] [MainThread]: Flushing usage events
+[0m14:12:25.469061 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:12:44.001304 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4268d19190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4266d4de80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42667e4fb0>]}
+
+
+============================== 14:12:44.014743 | 7fd9cf25-59d6-455b-9695-cd035563be11 ==============================
+[0m14:12:44.014743 [info ] [MainThread]: Running with dbt=1.10.15
+[0m14:12:44.018178 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'empty': 'None', 'quiet': 'False', 'introspect': 'True', 'static_parser': 'True', 'write_json': 'True', 'invocation_command': 'dbt debug', 'log_cache_events': 'False', 'debug': 'False', 'target_path': 'None', 'warn_error': 'None', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs', 'indirect_selection': 'eager', 'printer_width': '80', 'no_print': 'None', 'log_format': 'default', 'use_colors': 'True', 'version_check': 'True', 'profiles_dir': '/home/mainavm/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'fail_fast': 'False'}
+[0m14:12:44.079193 [info ] [MainThread]: dbt version: 1.10.15
+[0m14:12:44.080772 [info ] [MainThread]: python version: 3.12.3
+[0m14:12:44.081831 [info ] [MainThread]: python path: /home/mainavm/chw_activity_project/venv/bin/python3
+[0m14:12:44.082938 [info ] [MainThread]: os info: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39
+[0m14:12:44.346966 [info ] [MainThread]: Using profiles dir at /home/mainavm/.dbt
+[0m14:12:44.348127 [info ] [MainThread]: Using profiles.yml file at /home/mainavm/.dbt/profiles.yml
+[0m14:12:44.349296 [info ] [MainThread]: Using dbt_project.yml file at /home/mainavm/chw_activity_project/dbt_project.yml
+[0m14:12:44.351763 [info ] [MainThread]: adapter type: postgres
+[0m14:12:44.353433 [info ] [MainThread]: adapter version: 1.9.1
+[0m14:12:44.354922 [info ] [MainThread]: Configuration:
+[0m14:12:44.365651 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:12:44.366930 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m14:12:44.368044 [info ] [MainThread]: Required dependencies:
+[0m14:12:44.369258 [debug] [MainThread]: Executing "git --help"
+[0m14:12:44.431575 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:12:44.433575 [debug] [MainThread]: STDERR: "b''"
+[0m14:12:44.434798 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:12:44.435910 [info ] [MainThread]: Connection:
+[0m14:12:44.437053 [info ] [MainThread]:   host: pg-583808d-muragevincent39-e823.i.aivencloud.com
+[0m14:12:44.438289 [info ] [MainThread]:   port: 14040
+[0m14:12:44.440564 [info ] [MainThread]:   user: avnadmin
+[0m14:12:44.451368 [info ] [MainThread]:   database: defaultdb
+[0m14:12:44.452596 [info ] [MainThread]:   schema: marts
+[0m14:12:44.453715 [info ] [MainThread]:   connect_timeout: 10
+[0m14:12:44.454838 [info ] [MainThread]:   role: None
+[0m14:12:44.455930 [info ] [MainThread]:   search_path: None
+[0m14:12:44.456912 [info ] [MainThread]:   keepalives_idle: 0
+[0m14:12:44.467097 [info ] [MainThread]:   sslmode: None
+[0m14:12:44.468381 [info ] [MainThread]:   sslcert: None
+[0m14:12:44.469193 [info ] [MainThread]:   sslkey: None
+[0m14:12:44.470250 [info ] [MainThread]:   sslrootcert: None
+[0m14:12:44.471031 [info ] [MainThread]:   application_name: dbt
+[0m14:12:44.471775 [info ] [MainThread]:   retries: 1
+[0m14:12:44.478100 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m14:12:44.820001 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m14:12:44.957905 [debug] [MainThread]: Using postgres connection "debug"
+[0m14:12:44.965614 [debug] [MainThread]: On debug: select 1 as id
+[0m14:12:44.966388 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:12:47.356572 [debug] [MainThread]: SQL status: SELECT 1 in 2.389 seconds
+[0m14:12:47.366874 [debug] [MainThread]: On debug: Close
+[0m14:12:47.369217 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m14:12:47.370602 [info ] [MainThread]: [31m1 check failed:[0m
+[0m14:12:47.372041 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/mainavm/chw_activity_project/dbt_project.yml> not found
+
+[0m14:12:47.382899 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 3.777659, "process_in_blocks": "71000", "process_kernel_time": 3.158414, "process_mem_max_rss": "113880", "process_out_blocks": "24", "process_user_time": 6.863266}
+[0m14:12:47.385224 [debug] [MainThread]: Command `dbt debug` failed at 14:12:47.384635 after 3.78 seconds
+[0m14:12:47.386422 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:12:47.387939 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f426a7232c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42673a3980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4266438fb0>]}
+[0m14:12:47.389653 [debug] [MainThread]: Flushing usage events
+[0m14:12:48.504743 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:14:21.442215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f56071678c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f56070367b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5608a3d6d0>]}
+
+
+============================== 14:14:21.451727 | fd7b75e3-a710-4ed0-ad1f-9b3af1a48197 ==============================
+[0m14:14:21.451727 [info ] [MainThread]: Running with dbt=1.10.15
+[0m14:14:21.453374 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'log_path': '/home/mainavm/chw_activity_project/logs', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'empty': 'None', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'no_print': 'None', 'write_json': 'True', 'static_parser': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'printer_width': '80', 'log_format': 'default', 'warn_error': 'None', 'use_colors': 'True', 'quiet': 'False', 'target_path': 'None', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/home/mainavm/.dbt', 'invocation_command': 'dbt debug', 'fail_fast': 'False', 'partial_parse': 'True'}
+[0m14:14:21.557503 [info ] [MainThread]: dbt version: 1.10.15
+[0m14:14:21.558853 [info ] [MainThread]: python version: 3.12.3
+[0m14:14:21.560091 [info ] [MainThread]: python path: /home/mainavm/chw_activity_project/venv/bin/python3
+[0m14:14:21.561495 [info ] [MainThread]: os info: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39
+[0m14:14:21.923586 [info ] [MainThread]: Using profiles dir at /home/mainavm/.dbt
+[0m14:14:21.927151 [info ] [MainThread]: Using profiles.yml file at /home/mainavm/.dbt/profiles.yml
+[0m14:14:21.928712 [info ] [MainThread]: Using dbt_project.yml file at /home/mainavm/chw_activity_project/dbt_project.yml
+[0m14:14:21.930807 [info ] [MainThread]: adapter type: postgres
+[0m14:14:21.932010 [info ] [MainThread]: adapter version: 1.9.1
+[0m14:14:22.164508 [info ] [MainThread]: Configuration:
+[0m14:14:22.165573 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:14:22.167177 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m14:14:22.168468 [info ] [MainThread]: Required dependencies:
+[0m14:14:22.169370 [debug] [MainThread]: Executing "git --help"
+[0m14:14:22.206887 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:14:22.208031 [debug] [MainThread]: STDERR: "b''"
+[0m14:14:22.209179 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:14:22.210586 [info ] [MainThread]: Connection:
+[0m14:14:22.211959 [info ] [MainThread]:   host: pg-583808d-muragevincent39-e823.i.aivencloud.com
+[0m14:14:22.214064 [info ] [MainThread]:   port: 14040
+[0m14:14:22.215229 [info ] [MainThread]:   user: avnadmin
+[0m14:14:22.216201 [info ] [MainThread]:   database: defaultdb
+[0m14:14:22.217024 [info ] [MainThread]:   schema: marts
+[0m14:14:22.217856 [info ] [MainThread]:   connect_timeout: 10
+[0m14:14:22.219107 [info ] [MainThread]:   role: None
+[0m14:14:22.219808 [info ] [MainThread]:   search_path: None
+[0m14:14:22.220603 [info ] [MainThread]:   keepalives_idle: 0
+[0m14:14:22.221385 [info ] [MainThread]:   sslmode: None
+[0m14:14:22.222091 [info ] [MainThread]:   sslcert: None
+[0m14:14:22.222780 [info ] [MainThread]:   sslkey: None
+[0m14:14:22.223450 [info ] [MainThread]:   sslrootcert: None
+[0m14:14:22.227142 [info ] [MainThread]:   application_name: dbt
+[0m14:14:22.228782 [info ] [MainThread]:   retries: 1
+[0m14:14:22.230366 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m14:14:22.395180 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m14:14:22.457637 [debug] [MainThread]: Using postgres connection "debug"
+[0m14:14:22.458808 [debug] [MainThread]: On debug: select 1 as id
+[0m14:14:22.460011 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:14:24.758492 [debug] [MainThread]: SQL status: SELECT 1 in 2.298 seconds
+[0m14:14:24.761533 [debug] [MainThread]: On debug: Close
+[0m14:14:24.762724 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m14:14:24.764048 [info ] [MainThread]: [32mAll checks passed![0m
+[0m14:14:24.769230 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 3.449131, "process_in_blocks": "111400", "process_kernel_time": 0.885107, "process_mem_max_rss": "115024", "process_out_blocks": "32", "process_user_time": 3.892338}
+[0m14:14:24.769956 [debug] [MainThread]: Command `dbt debug` succeeded at 14:14:24.769804 after 3.45 seconds
+[0m14:14:24.770522 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:14:24.771003 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f560687fec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5608a3d6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f56071678c0>]}
+[0m14:14:24.771518 [debug] [MainThread]: Flushing usage events
+[0m14:14:25.774844 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:18:01.039894 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f12e0a05400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f12e07af5c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f12e0ee2270>]}
+
+
+============================== 14:18:01.049473 | 1f72d2d4-737a-4073-9940-5fef44a8beca ==============================
+[0m14:18:01.049473 [info ] [MainThread]: Running with dbt=1.10.15
+[0m14:18:01.050720 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'use_experimental_parser': 'False', 'version_check': 'True', 'write_json': 'True', 'use_colors': 'True', 'warn_error': 'None', 'log_cache_events': 'False', 'log_path': '/home/mainavm/chw_activity_project/logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'introspect': 'True', 'no_print': 'None', 'profiles_dir': '/home/mainavm/.dbt', 'empty': 'False', 'partial_parse': 'True', 'fail_fast': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run --select chw_activity_monthly', 'target_path': 'None'}
+[0m14:18:01.891829 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1f72d2d4-737a-4073-9940-5fef44a8beca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f12e0643ef0>]}
+[0m14:18:02.165546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1f72d2d4-737a-4073-9940-5fef44a8beca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f12e0950a70>]}
+[0m14:18:02.166986 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m14:18:02.422395 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m14:18:02.423607 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:18:02.426337 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '1f72d2d4-737a-4073-9940-5fef44a8beca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f12e11a1250>]}
+[0m14:18:04.971385 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.chw_activity_project.chw_activity_monthly' (models/chw_activity_monthly.sql) depends on a node named 'fct_chv_activity' which was not found
+[0m14:18:04.977298 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 4.0548415, "process_in_blocks": "6032", "process_kernel_time": 0.561664, "process_mem_max_rss": "115512", "process_out_blocks": "16", "process_user_time": 6.5795}
+[0m14:18:04.979056 [debug] [MainThread]: Command `dbt run` failed at 14:18:04.978717 after 4.06 seconds
+[0m14:18:04.980943 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f12e425f2f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f12e1ac8200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f12dedfc080>]}
+[0m14:18:04.982726 [debug] [MainThread]: Flushing usage events
+[0m14:18:05.983863 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:22:04.174347 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d71511a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d71273470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d729d5df0>]}
+
+
+============================== 14:22:04.185119 | e40b60dc-7442-45c0-a885-b58dccaeae62 ==============================
+[0m14:22:04.185119 [info ] [MainThread]: Running with dbt=1.10.15
+[0m14:22:04.186829 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'log_path': '/home/mainavm/chw_activity_project/logs', 'empty': 'False', 'printer_width': '80', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'quiet': 'False', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'version_check': 'True', 'profiles_dir': '/home/mainavm/.dbt', 'target_path': 'None', 'indirect_selection': 'eager', 'partial_parse': 'True', 'invocation_command': 'dbt run --select chw_activity_monthly', 'warn_error': 'None', 'static_parser': 'True', 'log_format': 'default', 'debug': 'False', 'log_cache_events': 'False'}
+[0m14:22:04.796427 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e40b60dc-7442-45c0-a885-b58dccaeae62', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d735ca630>]}
+[0m14:22:04.987396 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e40b60dc-7442-45c0-a885-b58dccaeae62', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d714d3890>]}
+[0m14:22:04.988950 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m14:22:05.305357 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m14:22:05.308052 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:22:05.309570 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e40b60dc-7442-45c0-a885-b58dccaeae62', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d70d9be90>]}
+[0m14:22:10.189969 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e40b60dc-7442-45c0-a885-b58dccaeae62', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d6f906780>]}
+[0m14:22:10.468884 [debug] [MainThread]: Wrote artifact WritableManifest to /home/mainavm/chw_activity_project/target/manifest.json
+[0m14:22:10.474130 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/mainavm/chw_activity_project/target/semantic_manifest.json
+[0m14:22:10.514276 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e40b60dc-7442-45c0-a885-b58dccaeae62', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d6e963830>]}
+[0m14:22:10.515346 [info ] [MainThread]: Found 1 model, 3 data tests, 1 source, 460 macros
+[0m14:22:10.516250 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e40b60dc-7442-45c0-a885-b58dccaeae62', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d6e929ee0>]}
+[0m14:22:10.521100 [info ] [MainThread]: 
+[0m14:22:10.522284 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:22:10.523580 [info ] [MainThread]: 
+[0m14:22:10.525336 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m14:22:10.536532 [debug] [ThreadPool]: Acquiring new postgres connection 'list_defaultdb'
+[0m14:22:10.622870 [debug] [ThreadPool]: Using postgres connection "list_defaultdb"
+[0m14:22:10.623413 [debug] [ThreadPool]: On list_defaultdb: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "chw_activity_project", "target_name": "dev", "connection_name": "list_defaultdb"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m14:22:10.623864 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:22:12.917761 [debug] [ThreadPool]: SQL status: SELECT 5 in 2.293 seconds
+[0m14:22:12.923760 [debug] [ThreadPool]: On list_defaultdb: Close
+[0m14:22:12.927926 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_defaultdb, now create_defaultdb_marts)
+[0m14:22:12.929841 [debug] [ThreadPool]: Creating schema "database: "defaultdb"
+schema: "marts"
+"
+[0m14:22:12.948931 [debug] [ThreadPool]: Using postgres connection "create_defaultdb_marts"
+[0m14:22:12.949537 [debug] [ThreadPool]: On create_defaultdb_marts: BEGIN
+[0m14:22:12.950023 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:22:15.276900 [debug] [ThreadPool]: SQL status: BEGIN in 2.327 seconds
+[0m14:22:15.277802 [debug] [ThreadPool]: Using postgres connection "create_defaultdb_marts"
+[0m14:22:15.278731 [debug] [ThreadPool]: On create_defaultdb_marts: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "chw_activity_project", "target_name": "dev", "connection_name": "create_defaultdb_marts"} */
+create schema if not exists "marts"
+[0m14:22:15.544658 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.265 seconds
+[0m14:22:15.546267 [debug] [ThreadPool]: On create_defaultdb_marts: COMMIT
+[0m14:22:15.546880 [debug] [ThreadPool]: Using postgres connection "create_defaultdb_marts"
+[0m14:22:15.547517 [debug] [ThreadPool]: On create_defaultdb_marts: COMMIT
+[0m14:22:15.793020 [debug] [ThreadPool]: SQL status: COMMIT in 0.244 seconds
+[0m14:22:15.794316 [debug] [ThreadPool]: On create_defaultdb_marts: Close
+[0m14:22:15.801830 [debug] [ThreadPool]: Acquiring new postgres connection 'list_defaultdb_marts'
+[0m14:22:15.826925 [debug] [ThreadPool]: Using postgres connection "list_defaultdb_marts"
+[0m14:22:15.827933 [debug] [ThreadPool]: On list_defaultdb_marts: BEGIN
+[0m14:22:15.828860 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:22:18.122881 [debug] [ThreadPool]: SQL status: BEGIN in 2.294 seconds
+[0m14:22:18.124067 [debug] [ThreadPool]: Using postgres connection "list_defaultdb_marts"
+[0m14:22:18.125833 [debug] [ThreadPool]: On list_defaultdb_marts: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "chw_activity_project", "target_name": "dev", "connection_name": "list_defaultdb_marts"} */
+select
+      'defaultdb' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'marts'
+    union all
+    select
+      'defaultdb' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'marts'
+    union all
+    select
+      'defaultdb' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'marts'
+  
+[0m14:22:18.380535 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.253 seconds
+[0m14:22:18.382784 [debug] [ThreadPool]: On list_defaultdb_marts: ROLLBACK
+[0m14:22:18.623845 [debug] [ThreadPool]: On list_defaultdb_marts: Close
+[0m14:22:18.635751 [debug] [MainThread]: Using postgres connection "master"
+[0m14:22:18.636352 [debug] [MainThread]: On master: BEGIN
+[0m14:22:18.636806 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:22:20.986639 [debug] [MainThread]: SQL status: BEGIN in 2.350 seconds
+[0m14:22:20.987347 [debug] [MainThread]: Using postgres connection "master"
+[0m14:22:20.988163 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "chw_activity_project", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m14:22:21.254709 [debug] [MainThread]: SQL status: SELECT 0 in 0.266 seconds
+[0m14:22:21.257156 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e40b60dc-7442-45c0-a885-b58dccaeae62', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d6e91dee0>]}
+[0m14:22:21.257946 [debug] [MainThread]: On master: ROLLBACK
+[0m14:22:21.508441 [debug] [MainThread]: Using postgres connection "master"
+[0m14:22:21.509729 [debug] [MainThread]: On master: BEGIN
+[0m14:22:22.008236 [debug] [MainThread]: SQL status: BEGIN in 0.497 seconds
+[0m14:22:22.009639 [debug] [MainThread]: On master: COMMIT
+[0m14:22:22.011163 [debug] [MainThread]: Using postgres connection "master"
+[0m14:22:22.012338 [debug] [MainThread]: On master: COMMIT
+[0m14:22:22.262529 [debug] [MainThread]: SQL status: COMMIT in 0.249 seconds
+[0m14:22:22.263614 [debug] [MainThread]: On master: Close
+[0m14:22:22.309573 [debug] [Thread-1 (]: Began running node model.chw_activity_project.chw_activity_monthly
+[0m14:22:22.311391 [info ] [Thread-1 (]: 1 of 1 START sql incremental model marts.chw_activity_monthly .................. [RUN]
+[0m14:22:22.313161 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_defaultdb_marts, now model.chw_activity_project.chw_activity_monthly)
+[0m14:22:22.314432 [debug] [Thread-1 (]: Began compiling node model.chw_activity_project.chw_activity_monthly
+[0m14:22:22.343536 [debug] [Thread-1 (]: Writing injected SQL for node "model.chw_activity_project.chw_activity_monthly"
+[0m14:22:22.350033 [debug] [Thread-1 (]: Began executing node model.chw_activity_project.chw_activity_monthly
+[0m14:22:22.551253 [debug] [Thread-1 (]: Writing runtime sql for node "model.chw_activity_project.chw_activity_monthly"
+[0m14:22:22.564300 [debug] [Thread-1 (]: Using postgres connection "model.chw_activity_project.chw_activity_monthly"
+[0m14:22:22.565568 [debug] [Thread-1 (]: On model.chw_activity_project.chw_activity_monthly: BEGIN
+[0m14:22:22.566733 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:22:24.844096 [debug] [Thread-1 (]: SQL status: BEGIN in 2.276 seconds
+[0m14:22:24.848108 [debug] [Thread-1 (]: Using postgres connection "model.chw_activity_project.chw_activity_monthly"
+[0m14:22:24.852877 [debug] [Thread-1 (]: On model.chw_activity_project.chw_activity_monthly: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "chw_activity_project", "target_name": "dev", "node_id": "model.chw_activity_project.chw_activity_monthly"} */
+
+      
+  
+    
+
+  create  table "defaultdb"."marts"."chw_activity_monthly"
+  
+  
+    as
+  
+  (
+    
+
+with source_data as (
+    select
+        activity_id,
+        chv_id,
+        activity_date,
+        activity_type,
+        household_id,
+        patient_id,
+        is_deleted,
+        created_at,
+        updated_at
+    from "defaultdb"."marts"."fct_chv_activity"
+    where is_deleted = false
+      and chv_id is not null
+      and activity_date is not null
+),
+
+with_report_month as (
+    select
+        chv_id,
+        
+    case
+        when activity_date is null then null
+        when extract(day from activity_date) >= 26
+            then date_trunc('month', activity_date + interval '1 month')
+        else date_trunc('month', activity_date)
+    end
+ as report_month,
+        activity_type,
+        household_id,
+        patient_id
+    from source_data
+),
+
+aggregated as (
+    select
+        chv_id,
+        report_month,
+        count(*) as total_activities,
+        count(distinct household_id) as unique_households_visited,
+        count(distinct patient_id) as unique_patients_served,
+        sum(case when activity_type = 'pregnancy_visit' then 1 else 0 end) as pregnancy_visits,
+        sum(case when activity_type = 'child_assessment' then 1 else 0 end) as child_assessments,
+        sum(case when activity_type = 'family_planning' then 1 else 0 end) as family_planning_visits
+    from with_report_month
+    group by chv_id, report_month
+)
+
+select *
+from aggregated
+  );
+  
+  
+[0m14:22:25.107142 [debug] [Thread-1 (]: Postgres adapter: Postgres error: relation "marts.fct_chv_activity" does not exist
+LINE 26:     from "defaultdb"."marts"."fct_chv_activity"
+                  ^
+
+[0m14:22:25.108172 [debug] [Thread-1 (]: On model.chw_activity_project.chw_activity_monthly: ROLLBACK
+[0m14:22:25.351876 [debug] [Thread-1 (]: On model.chw_activity_project.chw_activity_monthly: Close
+[0m14:22:25.382675 [debug] [Thread-1 (]: Database Error in model chw_activity_monthly (models/chw_activity_monthly.sql)
+  relation "marts.fct_chv_activity" does not exist
+  LINE 26:     from "defaultdb"."marts"."fct_chv_activity"
+                    ^
+  compiled code at target/run/chw_activity_project/models/chw_activity_monthly.sql
+[0m14:22:25.386500 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e40b60dc-7442-45c0-a885-b58dccaeae62', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d71c00c20>]}
+[0m14:22:25.387475 [error] [Thread-1 (]: 1 of 1 ERROR creating sql incremental model marts.chw_activity_monthly ......... [[31mERROR[0m in 3.07s]
+[0m14:22:25.389375 [debug] [Thread-1 (]: Finished running node model.chw_activity_project.chw_activity_monthly
+[0m14:22:25.391735 [debug] [Thread-4 (]: Marking all children of 'model.chw_activity_project.chw_activity_monthly' to be skipped because of status 'error'.  Reason: Database Error in model chw_activity_monthly (models/chw_activity_monthly.sql)
+  relation "marts.fct_chv_activity" does not exist
+  LINE 26:     from "defaultdb"."marts"."fct_chv_activity"
+                    ^
+  compiled code at target/run/chw_activity_project/models/chw_activity_monthly.sql.
+[0m14:22:25.399746 [debug] [MainThread]: Using postgres connection "master"
+[0m14:22:25.400905 [debug] [MainThread]: On master: BEGIN
+[0m14:22:25.401869 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:22:27.849774 [debug] [MainThread]: SQL status: BEGIN in 2.448 seconds
+[0m14:22:27.850742 [debug] [MainThread]: On master: COMMIT
+[0m14:22:27.851211 [debug] [MainThread]: Using postgres connection "master"
+[0m14:22:27.851591 [debug] [MainThread]: On master: COMMIT
+[0m14:22:28.094377 [debug] [MainThread]: SQL status: COMMIT in 0.242 seconds
+[0m14:22:28.095357 [debug] [MainThread]: On master: Close
+[0m14:22:28.096951 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:22:28.097970 [debug] [MainThread]: Connection 'create_defaultdb_marts' was properly closed.
+[0m14:22:28.098937 [debug] [MainThread]: Connection 'model.chw_activity_project.chw_activity_monthly' was properly closed.
+[0m14:22:28.099785 [info ] [MainThread]: 
+[0m14:22:28.101071 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 17.57 seconds (17.57s).
+[0m14:22:28.112946 [debug] [MainThread]: Command end result
+[0m14:22:28.266586 [debug] [MainThread]: Wrote artifact WritableManifest to /home/mainavm/chw_activity_project/target/manifest.json
+[0m14:22:28.269961 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/mainavm/chw_activity_project/target/semantic_manifest.json
+[0m14:22:28.283305 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/mainavm/chw_activity_project/target/run_results.json
+[0m14:22:28.284187 [info ] [MainThread]: 
+[0m14:22:28.285459 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m14:22:28.287579 [info ] [MainThread]: 
+[0m14:22:28.289127 [error] [MainThread]: [31mFailure in model chw_activity_monthly (models/chw_activity_monthly.sql)[0m
+[0m14:22:28.290587 [error] [MainThread]:   Database Error in model chw_activity_monthly (models/chw_activity_monthly.sql)
+  relation "marts.fct_chv_activity" does not exist
+  LINE 26:     from "defaultdb"."marts"."fct_chv_activity"
+                    ^
+  compiled code at target/run/chw_activity_project/models/chw_activity_monthly.sql
+[0m14:22:28.291762 [info ] [MainThread]: 
+[0m14:22:28.302960 [info ] [MainThread]:   compiled code at target/compiled/chw_activity_project/models/chw_activity_monthly.sql
+[0m14:22:28.304095 [info ] [MainThread]: 
+[0m14:22:28.305421 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m14:22:28.307346 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 24.284197, "process_in_blocks": "1784", "process_kernel_time": 0.903702, "process_mem_max_rss": "132836", "process_out_blocks": "2776", "process_user_time": 11.357893}
+[0m14:22:28.314674 [debug] [MainThread]: Command `dbt run` failed at 14:22:28.314352 after 24.29 seconds
+[0m14:22:28.319727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d71162480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d6fd5f8f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d6fd5fdd0>]}
+[0m14:22:28.321040 [debug] [MainThread]: Flushing usage events
+[0m14:22:29.332383 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:30:49.169440 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff82d5558e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff82d89e570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff82e040410>]}
+
+
+============================== 14:30:49.178579 | d3cfef6f-3e79-4537-a6eb-b93faca5d5b3 ==============================
+[0m14:30:49.178579 [info ] [MainThread]: Running with dbt=1.10.15
+[0m14:30:49.180261 [debug] [MainThread]: running dbt with arguments {'log_path': '/home/mainavm/chw_activity_project/logs', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'quiet': 'False', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'empty': 'False', 'version_check': 'True', 'invocation_command': 'dbt run --select chw_activity_monthly', 'debug': 'False', 'fail_fast': 'False', 'log_format': 'default', 'warn_error': 'None', 'use_colors': 'True', 'write_json': 'True', 'no_print': 'None', 'target_path': 'None', 'log_cache_events': 'False', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'introspect': 'True', 'profiles_dir': '/home/mainavm/.dbt'}
+[0m14:30:49.602281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd3cfef6f-3e79-4537-a6eb-b93faca5d5b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff82d5a0110>]}
+[0m14:30:49.739810 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd3cfef6f-3e79-4537-a6eb-b93faca5d5b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff82d89e570>]}
+[0m14:30:49.741571 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m14:30:49.944370 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m14:30:50.358333 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:30:50.359480 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:30:50.457888 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd3cfef6f-3e79-4537-a6eb-b93faca5d5b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff82b9081a0>]}
+[0m14:30:50.621106 [debug] [MainThread]: Wrote artifact WritableManifest to /home/mainavm/chw_activity_project/target/manifest.json
+[0m14:30:50.624548 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/mainavm/chw_activity_project/target/semantic_manifest.json
+[0m14:30:50.671713 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd3cfef6f-3e79-4537-a6eb-b93faca5d5b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff82bd02e40>]}
+[0m14:30:50.672479 [info ] [MainThread]: Found 1 model, 3 data tests, 1 source, 460 macros
+[0m14:30:50.673213 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd3cfef6f-3e79-4537-a6eb-b93faca5d5b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff82b59ce90>]}
+[0m14:30:50.678806 [info ] [MainThread]: 
+[0m14:30:50.680420 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:30:50.681450 [info ] [MainThread]: 
+[0m14:30:50.683100 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m14:30:50.687297 [debug] [ThreadPool]: Acquiring new postgres connection 'list_defaultdb'
+[0m14:30:50.782202 [debug] [ThreadPool]: Using postgres connection "list_defaultdb"
+[0m14:30:50.783116 [debug] [ThreadPool]: On list_defaultdb: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "chw_activity_project", "target_name": "dev", "connection_name": "list_defaultdb"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m14:30:50.783885 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:30:53.253963 [debug] [ThreadPool]: SQL status: SELECT 6 in 2.470 seconds
+[0m14:30:53.266388 [debug] [ThreadPool]: On list_defaultdb: Close
+[0m14:30:53.277831 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_defaultdb, now list_defaultdb_marts)
+[0m14:30:53.298691 [debug] [ThreadPool]: Using postgres connection "list_defaultdb_marts"
+[0m14:30:53.299803 [debug] [ThreadPool]: On list_defaultdb_marts: BEGIN
+[0m14:30:53.301025 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:30:55.572483 [debug] [ThreadPool]: SQL status: BEGIN in 2.271 seconds
+[0m14:30:55.573067 [debug] [ThreadPool]: Using postgres connection "list_defaultdb_marts"
+[0m14:30:55.573478 [debug] [ThreadPool]: On list_defaultdb_marts: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "chw_activity_project", "target_name": "dev", "connection_name": "list_defaultdb_marts"} */
+select
+      'defaultdb' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'marts'
+    union all
+    select
+      'defaultdb' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'marts'
+    union all
+    select
+      'defaultdb' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'marts'
+  
+[0m14:30:55.822060 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.248 seconds
+[0m14:30:55.827342 [debug] [ThreadPool]: On list_defaultdb_marts: ROLLBACK
+[0m14:30:56.071427 [debug] [ThreadPool]: On list_defaultdb_marts: Close
+[0m14:30:56.084909 [debug] [MainThread]: Using postgres connection "master"
+[0m14:30:56.085524 [debug] [MainThread]: On master: BEGIN
+[0m14:30:56.085981 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:30:58.304681 [debug] [MainThread]: SQL status: BEGIN in 2.218 seconds
+[0m14:30:58.309488 [debug] [MainThread]: Using postgres connection "master"
+[0m14:30:58.313943 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "chw_activity_project", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m14:30:58.569707 [debug] [MainThread]: SQL status: SELECT 0 in 0.247 seconds
+[0m14:30:58.575018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd3cfef6f-3e79-4537-a6eb-b93faca5d5b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff82ce6cbf0>]}
+[0m14:30:58.577086 [debug] [MainThread]: On master: ROLLBACK
+[0m14:30:58.817313 [debug] [MainThread]: Using postgres connection "master"
+[0m14:30:58.818038 [debug] [MainThread]: On master: BEGIN
+[0m14:30:59.297772 [debug] [MainThread]: SQL status: BEGIN in 0.479 seconds
+[0m14:30:59.299007 [debug] [MainThread]: On master: COMMIT
+[0m14:30:59.300006 [debug] [MainThread]: Using postgres connection "master"
+[0m14:30:59.301029 [debug] [MainThread]: On master: COMMIT
+[0m14:30:59.541156 [debug] [MainThread]: SQL status: COMMIT in 0.239 seconds
+[0m14:30:59.542776 [debug] [MainThread]: On master: Close
+[0m14:30:59.555890 [debug] [Thread-1 (]: Began running node model.chw_activity_project.chw_activity_monthly
+[0m14:30:59.562192 [info ] [Thread-1 (]: 1 of 1 START sql incremental model marts.chw_activity_monthly .................. [RUN]
+[0m14:30:59.564630 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_defaultdb_marts, now model.chw_activity_project.chw_activity_monthly)
+[0m14:30:59.567127 [debug] [Thread-1 (]: Began compiling node model.chw_activity_project.chw_activity_monthly
+[0m14:30:59.636177 [debug] [Thread-1 (]: Writing injected SQL for node "model.chw_activity_project.chw_activity_monthly"
+[0m14:30:59.638789 [debug] [Thread-1 (]: Began executing node model.chw_activity_project.chw_activity_monthly
+[0m14:30:59.832825 [debug] [Thread-1 (]: Writing runtime sql for node "model.chw_activity_project.chw_activity_monthly"
+[0m14:30:59.834261 [debug] [Thread-1 (]: Using postgres connection "model.chw_activity_project.chw_activity_monthly"
+[0m14:30:59.835207 [debug] [Thread-1 (]: On model.chw_activity_project.chw_activity_monthly: BEGIN
+[0m14:30:59.835753 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:31:02.050245 [debug] [Thread-1 (]: SQL status: BEGIN in 2.214 seconds
+[0m14:31:02.051466 [debug] [Thread-1 (]: Using postgres connection "model.chw_activity_project.chw_activity_monthly"
+[0m14:31:02.053133 [debug] [Thread-1 (]: On model.chw_activity_project.chw_activity_monthly: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "chw_activity_project", "target_name": "dev", "node_id": "model.chw_activity_project.chw_activity_monthly"} */
+
+      
+  
+    
+
+  create  table "defaultdb"."marts"."chw_activity_monthly"
+  
+  
+    as
+  
+  (
+    
+
+with source_data as (
+    select
+        activity_id,
+        chv_id,
+        activity_date,
+        activity_type,
+        household_id,
+        patient_id,
+        is_deleted,
+        created_at,
+        updated_at
+    from "defaultdb"."marts"."fct_chv_activity"
+    where is_deleted = false
+      and chv_id is not null
+      and activity_date is not null
+),
+
+with_report_month as (
+    select
+        chv_id,
+        
+    case
+        when activity_date is null then null
+        when extract(day from activity_date) >= 26
+            then date_trunc('month', activity_date + interval '1 month')
+        else date_trunc('month', activity_date)
+    end
+ as report_month,
+        activity_type,
+        household_id,
+        patient_id
+    from source_data
+),
+
+aggregated as (
+    select
+        chv_id,
+        report_month,
+        count(*) as total_activities,
+        count(distinct household_id) as unique_households_visited,
+        count(distinct patient_id) as unique_patients_served,
+        sum(case when activity_type = 'pregnancy_visit' then 1 else 0 end) as pregnancy_visits,
+        sum(case when activity_type = 'child_assessment' then 1 else 0 end) as child_assessments,
+        sum(case when activity_type = 'family_planning' then 1 else 0 end) as family_planning_visits
+    from with_report_month
+    group by chv_id, report_month
+)
+
+select *
+from aggregated
+  );
+  
+  
+[0m14:31:02.320735 [debug] [Thread-1 (]: SQL status: SELECT 4 in 0.266 seconds
+[0m14:31:02.468066 [debug] [Thread-1 (]: On model.chw_activity_project.chw_activity_monthly: COMMIT
+[0m14:31:02.469637 [debug] [Thread-1 (]: Using postgres connection "model.chw_activity_project.chw_activity_monthly"
+[0m14:31:02.471096 [debug] [Thread-1 (]: On model.chw_activity_project.chw_activity_monthly: COMMIT
+[0m14:31:02.722884 [debug] [Thread-1 (]: SQL status: COMMIT in 0.250 seconds
+[0m14:31:02.727338 [debug] [Thread-1 (]: On model.chw_activity_project.chw_activity_monthly: Close
+[0m14:31:02.734355 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd3cfef6f-3e79-4537-a6eb-b93faca5d5b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff82f5b5a60>]}
+[0m14:31:02.745210 [info ] [Thread-1 (]: 1 of 1 OK created sql incremental model marts.chw_activity_monthly ............. [[32mSELECT 4[0m in 3.17s]
+[0m14:31:02.747535 [debug] [Thread-1 (]: Finished running node model.chw_activity_project.chw_activity_monthly
+[0m14:31:02.751459 [debug] [MainThread]: Using postgres connection "master"
+[0m14:31:02.752798 [debug] [MainThread]: On master: BEGIN
+[0m14:31:02.753905 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:31:05.223434 [debug] [MainThread]: SQL status: BEGIN in 2.469 seconds
+[0m14:31:05.225574 [debug] [MainThread]: On master: COMMIT
+[0m14:31:05.226840 [debug] [MainThread]: Using postgres connection "master"
+[0m14:31:05.227858 [debug] [MainThread]: On master: COMMIT
+[0m14:31:05.468429 [debug] [MainThread]: SQL status: COMMIT in 0.239 seconds
+[0m14:31:05.469563 [debug] [MainThread]: On master: Close
+[0m14:31:05.471249 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:31:05.472221 [debug] [MainThread]: Connection 'model.chw_activity_project.chw_activity_monthly' was properly closed.
+[0m14:31:05.473034 [info ] [MainThread]: 
+[0m14:31:05.474094 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 14.79 seconds (14.79s).
+[0m14:31:05.477319 [debug] [MainThread]: Command end result
+[0m14:31:05.689420 [debug] [MainThread]: Wrote artifact WritableManifest to /home/mainavm/chw_activity_project/target/manifest.json
+[0m14:31:05.696975 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/mainavm/chw_activity_project/target/semantic_manifest.json
+[0m14:31:05.743731 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/mainavm/chw_activity_project/target/run_results.json
+[0m14:31:05.754795 [info ] [MainThread]: 
+[0m14:31:05.758170 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:31:05.759847 [info ] [MainThread]: 
+[0m14:31:05.761291 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m14:31:05.902828 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 16.864513, "process_in_blocks": "107080", "process_kernel_time": 0.948044, "process_mem_max_rss": "123608", "process_out_blocks": "1872", "process_user_time": 5.688269}
+[0m14:31:05.904536 [debug] [MainThread]: Command `dbt run` succeeded at 14:31:05.904055 after 16.87 seconds
+[0m14:31:05.905992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff82d1b2f00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff82d832c00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff829b8ae10>]}
+[0m14:31:05.907266 [debug] [MainThread]: Flushing usage events
+[0m14:31:07.067917 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:33:06.478898 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f859912ba70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8598d36870>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f85988ea420>]}
+
+
+============================== 14:33:06.488838 | 36068acc-a8b6-45e5-8966-5203d1cbc8c4 ==============================
+[0m14:33:06.488838 [info ] [MainThread]: Running with dbt=1.10.15
+[0m14:33:06.490616 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'write_json': 'True', 'static_parser': 'True', 'version_check': 'True', 'log_path': '/home/mainavm/chw_activity_project/logs', 'quiet': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'partial_parse': 'True', 'printer_width': '80', 'target_path': 'None', 'invocation_command': 'dbt test --select chw_activity_monthly', 'debug': 'False', 'empty': 'None', 'profiles_dir': '/home/mainavm/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'warn_error': 'None'}
+[0m14:33:06.925461 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '36068acc-a8b6-45e5-8966-5203d1cbc8c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8597e5c680>]}
+[0m14:33:07.086605 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '36068acc-a8b6-45e5-8966-5203d1cbc8c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f859a4e17f0>]}
+[0m14:33:07.089156 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m14:33:07.352981 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m14:33:07.765971 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:33:07.766915 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:33:07.904457 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '36068acc-a8b6-45e5-8966-5203d1cbc8c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8596d0b140>]}
+[0m14:33:08.248360 [debug] [MainThread]: Wrote artifact WritableManifest to /home/mainavm/chw_activity_project/target/manifest.json
+[0m14:33:08.253742 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/mainavm/chw_activity_project/target/semantic_manifest.json
+[0m14:33:08.331912 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '36068acc-a8b6-45e5-8966-5203d1cbc8c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8595d1e2a0>]}
+[0m14:33:08.333195 [info ] [MainThread]: Found 1 model, 3 data tests, 1 source, 460 macros
+[0m14:33:08.334545 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '36068acc-a8b6-45e5-8966-5203d1cbc8c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8596d0acc0>]}
+[0m14:33:08.340227 [info ] [MainThread]: 
+[0m14:33:08.341260 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:33:08.342446 [info ] [MainThread]: 
+[0m14:33:08.348194 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m14:33:08.354198 [debug] [ThreadPool]: Acquiring new postgres connection 'list_defaultdb_marts'
+[0m14:33:08.479578 [debug] [ThreadPool]: Using postgres connection "list_defaultdb_marts"
+[0m14:33:08.480448 [debug] [ThreadPool]: On list_defaultdb_marts: BEGIN
+[0m14:33:08.480948 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:33:11.135322 [debug] [ThreadPool]: SQL status: BEGIN in 2.654 seconds
+[0m14:33:11.136587 [debug] [ThreadPool]: Using postgres connection "list_defaultdb_marts"
+[0m14:33:11.137614 [debug] [ThreadPool]: On list_defaultdb_marts: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "chw_activity_project", "target_name": "dev", "connection_name": "list_defaultdb_marts"} */
+select
+      'defaultdb' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'marts'
+    union all
+    select
+      'defaultdb' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'marts'
+    union all
+    select
+      'defaultdb' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'marts'
+  
+[0m14:33:11.404380 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.266 seconds
+[0m14:33:11.406875 [debug] [ThreadPool]: On list_defaultdb_marts: ROLLBACK
+[0m14:33:11.655692 [debug] [ThreadPool]: On list_defaultdb_marts: Close
+[0m14:33:11.667568 [debug] [MainThread]: Using postgres connection "master"
+[0m14:33:11.668833 [debug] [MainThread]: On master: BEGIN
+[0m14:33:11.674057 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:33:13.947162 [debug] [MainThread]: SQL status: BEGIN in 2.273 seconds
+[0m14:33:13.948451 [debug] [MainThread]: Using postgres connection "master"
+[0m14:33:13.949999 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "chw_activity_project", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m14:33:14.199279 [debug] [MainThread]: SQL status: SELECT 0 in 0.248 seconds
+[0m14:33:14.201657 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '36068acc-a8b6-45e5-8966-5203d1cbc8c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8597dc7b30>]}
+[0m14:33:14.202331 [debug] [MainThread]: On master: ROLLBACK
+[0m14:33:14.443971 [debug] [MainThread]: Using postgres connection "master"
+[0m14:33:14.444982 [debug] [MainThread]: On master: BEGIN
+[0m14:33:14.929111 [debug] [MainThread]: SQL status: BEGIN in 0.483 seconds
+[0m14:33:14.930126 [debug] [MainThread]: On master: COMMIT
+[0m14:33:14.931274 [debug] [MainThread]: Using postgres connection "master"
+[0m14:33:14.932182 [debug] [MainThread]: On master: COMMIT
+[0m14:33:15.174243 [debug] [MainThread]: SQL status: COMMIT in 0.241 seconds
+[0m14:33:15.174978 [debug] [MainThread]: On master: Close
+[0m14:33:15.192972 [debug] [Thread-1 (]: Began running node test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa
+[0m14:33:15.194492 [info ] [Thread-1 (]: 1 of 3 START test not_null_chw_activity_monthly_chv_id ......................... [RUN]
+[0m14:33:15.196096 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_defaultdb_marts, now test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa)
+[0m14:33:15.198598 [debug] [Thread-1 (]: Began compiling node test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa
+[0m14:33:15.248779 [debug] [Thread-1 (]: Writing injected SQL for node "test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa"
+[0m14:33:15.253273 [debug] [Thread-1 (]: Began executing node test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa
+[0m14:33:15.287918 [debug] [Thread-1 (]: Writing runtime sql for node "test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa"
+[0m14:33:15.290378 [debug] [Thread-1 (]: Using postgres connection "test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa"
+[0m14:33:15.290968 [debug] [Thread-1 (]: On test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa: BEGIN
+[0m14:33:15.291476 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:33:17.570860 [debug] [Thread-1 (]: SQL status: BEGIN in 2.278 seconds
+[0m14:33:17.572790 [debug] [Thread-1 (]: Using postgres connection "test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa"
+[0m14:33:17.573440 [debug] [Thread-1 (]: On test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "chw_activity_project", "target_name": "dev", "node_id": "test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select chv_id
+from "defaultdb"."marts"."chw_activity_monthly"
+where chv_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:33:17.816951 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.243 seconds
+[0m14:33:17.829551 [debug] [Thread-1 (]: On test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa: ROLLBACK
+[0m14:33:18.071105 [debug] [Thread-1 (]: On test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa: Close
+[0m14:33:18.073340 [info ] [Thread-1 (]: 1 of 3 PASS not_null_chw_activity_monthly_chv_id ............................... [[32mPASS[0m in 2.88s]
+[0m14:33:18.075289 [debug] [Thread-1 (]: Finished running node test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa
+[0m14:33:18.077850 [debug] [Thread-1 (]: Began running node test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4
+[0m14:33:18.079586 [info ] [Thread-1 (]: 2 of 3 START test not_null_chw_activity_monthly_report_month ................... [RUN]
+[0m14:33:18.081066 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa, now test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4)
+[0m14:33:18.082386 [debug] [Thread-1 (]: Began compiling node test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4
+[0m14:33:18.092067 [debug] [Thread-1 (]: Writing injected SQL for node "test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4"
+[0m14:33:18.097480 [debug] [Thread-1 (]: Began executing node test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4
+[0m14:33:18.107269 [debug] [Thread-1 (]: Writing runtime sql for node "test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4"
+[0m14:33:18.108439 [debug] [Thread-1 (]: Using postgres connection "test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4"
+[0m14:33:18.109021 [debug] [Thread-1 (]: On test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4: BEGIN
+[0m14:33:18.114100 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:33:20.452133 [debug] [Thread-1 (]: SQL status: BEGIN in 2.338 seconds
+[0m14:33:20.452795 [debug] [Thread-1 (]: Using postgres connection "test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4"
+[0m14:33:20.453346 [debug] [Thread-1 (]: On test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "chw_activity_project", "target_name": "dev", "node_id": "test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select report_month
+from "defaultdb"."marts"."chw_activity_monthly"
+where report_month is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:33:20.703188 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.249 seconds
+[0m14:33:20.705586 [debug] [Thread-1 (]: On test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4: ROLLBACK
+[0m14:33:20.953716 [debug] [Thread-1 (]: On test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4: Close
+[0m14:33:20.955284 [info ] [Thread-1 (]: 2 of 3 PASS not_null_chw_activity_monthly_report_month ......................... [[32mPASS[0m in 2.87s]
+[0m14:33:20.957285 [debug] [Thread-1 (]: Finished running node test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4
+[0m14:33:20.958721 [debug] [Thread-1 (]: Began running node test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1
+[0m14:33:20.961040 [info ] [Thread-1 (]: 3 of 3 START test not_null_chw_activity_monthly_total_activities ............... [RUN]
+[0m14:33:20.962686 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4, now test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1)
+[0m14:33:20.963953 [debug] [Thread-1 (]: Began compiling node test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1
+[0m14:33:20.975434 [debug] [Thread-1 (]: Writing injected SQL for node "test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1"
+[0m14:33:20.980913 [debug] [Thread-1 (]: Began executing node test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1
+[0m14:33:20.989107 [debug] [Thread-1 (]: Writing runtime sql for node "test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1"
+[0m14:33:20.991068 [debug] [Thread-1 (]: Using postgres connection "test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1"
+[0m14:33:20.991753 [debug] [Thread-1 (]: On test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1: BEGIN
+[0m14:33:20.992284 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:33:23.281297 [debug] [Thread-1 (]: SQL status: BEGIN in 2.289 seconds
+[0m14:33:23.282665 [debug] [Thread-1 (]: Using postgres connection "test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1"
+[0m14:33:23.284181 [debug] [Thread-1 (]: On test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "chw_activity_project", "target_name": "dev", "node_id": "test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select total_activities
+from "defaultdb"."marts"."chw_activity_monthly"
+where total_activities is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:33:23.528615 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.243 seconds
+[0m14:33:23.533293 [debug] [Thread-1 (]: On test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1: ROLLBACK
+[0m14:33:23.775722 [debug] [Thread-1 (]: On test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1: Close
+[0m14:33:23.778134 [info ] [Thread-1 (]: 3 of 3 PASS not_null_chw_activity_monthly_total_activities ..................... [[32mPASS[0m in 2.82s]
+[0m14:33:23.780530 [debug] [Thread-1 (]: Finished running node test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1
+[0m14:33:23.786299 [debug] [MainThread]: Using postgres connection "master"
+[0m14:33:23.787269 [debug] [MainThread]: On master: BEGIN
+[0m14:33:23.787770 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:33:26.101889 [debug] [MainThread]: SQL status: BEGIN in 2.314 seconds
+[0m14:33:26.102566 [debug] [MainThread]: On master: COMMIT
+[0m14:33:26.103061 [debug] [MainThread]: Using postgres connection "master"
+[0m14:33:26.103523 [debug] [MainThread]: On master: COMMIT
+[0m14:33:26.364770 [debug] [MainThread]: SQL status: COMMIT in 0.261 seconds
+[0m14:33:26.365774 [debug] [MainThread]: On master: Close
+[0m14:33:26.367780 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:33:26.368635 [debug] [MainThread]: Connection 'test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1' was properly closed.
+[0m14:33:26.369628 [info ] [MainThread]: 
+[0m14:33:26.373521 [info ] [MainThread]: Finished running 3 data tests in 0 hours 0 minutes and 18.02 seconds (18.02s).
+[0m14:33:26.376947 [debug] [MainThread]: Command end result
+[0m14:33:26.431797 [debug] [MainThread]: Wrote artifact WritableManifest to /home/mainavm/chw_activity_project/target/manifest.json
+[0m14:33:26.439934 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/mainavm/chw_activity_project/target/semantic_manifest.json
+[0m14:33:26.462894 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/mainavm/chw_activity_project/target/run_results.json
+[0m14:33:26.464308 [info ] [MainThread]: 
+[0m14:33:26.465740 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:33:26.468044 [info ] [MainThread]: 
+[0m14:33:26.469653 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m14:33:26.474175 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 20.140491, "process_in_blocks": "108784", "process_kernel_time": 1.024371, "process_mem_max_rss": "127412", "process_out_blocks": "1912", "process_user_time": 6.392075}
+[0m14:33:26.477851 [debug] [MainThread]: Command `dbt test` succeeded at 14:33:26.475184 after 20.14 seconds
+[0m14:33:26.481714 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8598c9cfe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8598c9e390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f85943662a0>]}
+[0m14:33:26.483366 [debug] [MainThread]: Flushing usage events
+[0m14:33:27.628907 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:16:58.827630 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9526e65dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9528881d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95267f2420>]}
+
+
+============================== 16:16:58.943944 | 420180e6-c0ec-4603-b40c-8523df863c9e ==============================
+[0m16:16:58.943944 [info ] [MainThread]: Running with dbt=1.10.15
+[0m16:16:58.945536 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'debug': 'False', 'cache_selected_only': 'False', 'introspect': 'True', 'quiet': 'False', 'version_check': 'True', 'empty': 'False', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'printer_width': '80', 'log_path': '/home/mainavm/chw_activity_project/logs', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'invocation_command': 'dbt run --select chw_activity_monthly', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'target_path': 'None', 'use_experimental_parser': 'False', 'write_json': 'True', 'partial_parse': 'True', 'warn_error': 'None', 'no_print': 'None', 'profiles_dir': '/home/mainavm/.dbt'}
+[0m16:17:01.096953 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '420180e6-c0ec-4603-b40c-8523df863c9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9526d5af00>]}
+[0m16:17:01.672953 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '420180e6-c0ec-4603-b40c-8523df863c9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9525d304a0>]}
+[0m16:17:01.695688 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m16:17:02.682950 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m16:17:04.960352 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:17:04.961753 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:17:05.394195 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '420180e6-c0ec-4603-b40c-8523df863c9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95251f85c0>]}
+[0m16:17:06.201872 [debug] [MainThread]: Wrote artifact WritableManifest to /home/mainavm/chw_activity_project/target/manifest.json
+[0m16:17:06.218639 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/mainavm/chw_activity_project/target/semantic_manifest.json
+[0m16:17:06.351323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '420180e6-c0ec-4603-b40c-8523df863c9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9524963800>]}
+[0m16:17:06.361623 [info ] [MainThread]: Found 1 model, 3 data tests, 1 source, 460 macros
+[0m16:17:06.363067 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '420180e6-c0ec-4603-b40c-8523df863c9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9524138260>]}
+[0m16:17:06.378526 [info ] [MainThread]: 
+[0m16:17:06.380111 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:17:06.392695 [info ] [MainThread]: 
+[0m16:17:06.396274 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m16:17:06.416034 [debug] [ThreadPool]: Acquiring new postgres connection 'list_defaultdb'
+[0m16:17:06.801024 [debug] [ThreadPool]: Using postgres connection "list_defaultdb"
+[0m16:17:06.808367 [debug] [ThreadPool]: On list_defaultdb: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "chw_activity_project", "target_name": "dev", "connection_name": "list_defaultdb"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m16:17:06.809994 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:17:09.682247 [debug] [ThreadPool]: SQL status: SELECT 6 in 2.871 seconds
+[0m16:17:09.695246 [debug] [ThreadPool]: On list_defaultdb: Close
+[0m16:17:09.708481 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_defaultdb, now list_defaultdb_marts)
+[0m16:17:09.751655 [debug] [ThreadPool]: Using postgres connection "list_defaultdb_marts"
+[0m16:17:09.754450 [debug] [ThreadPool]: On list_defaultdb_marts: BEGIN
+[0m16:17:09.755704 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:17:12.246665 [debug] [ThreadPool]: SQL status: BEGIN in 2.491 seconds
+[0m16:17:12.383227 [debug] [ThreadPool]: Using postgres connection "list_defaultdb_marts"
+[0m16:17:12.384561 [debug] [ThreadPool]: On list_defaultdb_marts: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "chw_activity_project", "target_name": "dev", "connection_name": "list_defaultdb_marts"} */
+select
+      'defaultdb' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'marts'
+    union all
+    select
+      'defaultdb' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'marts'
+    union all
+    select
+      'defaultdb' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'marts'
+  
+[0m16:17:12.633372 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.247 seconds
+[0m16:17:12.638057 [debug] [ThreadPool]: On list_defaultdb_marts: ROLLBACK
+[0m16:17:12.886132 [debug] [ThreadPool]: On list_defaultdb_marts: Close
+[0m16:17:12.917793 [debug] [MainThread]: Using postgres connection "master"
+[0m16:17:12.918780 [debug] [MainThread]: On master: BEGIN
+[0m16:17:12.919893 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:17:15.299337 [debug] [MainThread]: SQL status: BEGIN in 2.379 seconds
+[0m16:17:15.300675 [debug] [MainThread]: Using postgres connection "master"
+[0m16:17:15.302301 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "chw_activity_project", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m16:17:15.613850 [debug] [MainThread]: SQL status: SELECT 0 in 0.271 seconds
+[0m16:17:15.632659 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '420180e6-c0ec-4603-b40c-8523df863c9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9523979250>]}
+[0m16:17:15.643344 [debug] [MainThread]: On master: ROLLBACK
+[0m16:17:15.888719 [debug] [MainThread]: Using postgres connection "master"
+[0m16:17:15.889865 [debug] [MainThread]: On master: BEGIN
+[0m16:17:16.393197 [debug] [MainThread]: SQL status: BEGIN in 0.502 seconds
+[0m16:17:16.394428 [debug] [MainThread]: On master: COMMIT
+[0m16:17:16.395518 [debug] [MainThread]: Using postgres connection "master"
+[0m16:17:16.396461 [debug] [MainThread]: On master: COMMIT
+[0m16:17:16.644042 [debug] [MainThread]: SQL status: COMMIT in 0.247 seconds
+[0m16:17:16.654902 [debug] [MainThread]: On master: Close
+[0m16:17:16.687469 [debug] [Thread-1 (]: Began running node model.chw_activity_project.chw_activity_monthly
+[0m16:17:16.690008 [info ] [Thread-1 (]: 1 of 1 START sql incremental model marts.chw_activity_monthly .................. [RUN]
+[0m16:17:16.692131 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_defaultdb_marts, now model.chw_activity_project.chw_activity_monthly)
+[0m16:17:16.693553 [debug] [Thread-1 (]: Began compiling node model.chw_activity_project.chw_activity_monthly
+[0m16:17:16.775253 [debug] [Thread-1 (]: Writing injected SQL for node "model.chw_activity_project.chw_activity_monthly"
+[0m16:17:16.794017 [debug] [Thread-1 (]: Began executing node model.chw_activity_project.chw_activity_monthly
+[0m16:17:17.646976 [debug] [Thread-1 (]: Using postgres connection "model.chw_activity_project.chw_activity_monthly"
+[0m16:17:17.756197 [debug] [Thread-1 (]: On model.chw_activity_project.chw_activity_monthly: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "chw_activity_project", "target_name": "dev", "node_id": "model.chw_activity_project.chw_activity_monthly"} */
+
+    
+  
+    
+
+  create temporary table "chw_activity_monthly__dbt_tmp161717346264"
+  
+  
+    as
+  
+  (
+    
+
+with source_data as (
+    select
+        activity_id,
+        chv_id,
+        activity_date,
+        activity_type,
+        household_id,
+        patient_id,
+        is_deleted,
+        created_at,
+        updated_at
+    from "defaultdb"."marts"."fct_chv_activity"
+    where is_deleted = false
+      and chv_id is not null
+      and activity_date is not null
+),
+
+with_report_month as (
+    select
+        chv_id,
+        
+    case
+        when activity_date is null then null
+        when extract(day from activity_date) >= 26
+            then date_trunc('month', activity_date + interval '1 month')
+        else date_trunc('month', activity_date)
+    end
+ as report_month,
+        activity_type,
+        household_id,
+        patient_id
+    from source_data
+),
+
+aggregated as (
+    select
+        chv_id,
+        report_month,
+        count(*) as total_activities,
+        count(distinct household_id) as unique_households_visited,
+        count(distinct patient_id) as unique_patients_served,
+        sum(case when activity_type = 'pregnancy_visit' then 1 else 0 end) as pregnancy_visits,
+        sum(case when activity_type = 'child_assessment' then 1 else 0 end) as child_assessments,
+        sum(case when activity_type = 'family_planning' then 1 else 0 end) as family_planning_visits
+    from with_report_month
+    group by chv_id, report_month
+)
+
+select *
+from aggregated
+  );
+  
+  
+[0m16:17:17.758004 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:17:20.332872 [debug] [Thread-1 (]: SQL status: SELECT 4 in 2.575 seconds
+[0m16:17:20.443707 [debug] [Thread-1 (]: Using postgres connection "model.chw_activity_project.chw_activity_monthly"
+[0m16:17:20.448930 [debug] [Thread-1 (]: On model.chw_activity_project.chw_activity_monthly: BEGIN
+[0m16:17:20.694963 [debug] [Thread-1 (]: SQL status: BEGIN in 0.245 seconds
+[0m16:17:20.696460 [debug] [Thread-1 (]: Using postgres connection "model.chw_activity_project.chw_activity_monthly"
+[0m16:17:20.697887 [debug] [Thread-1 (]: On model.chw_activity_project.chw_activity_monthly: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "chw_activity_project", "target_name": "dev", "node_id": "model.chw_activity_project.chw_activity_monthly"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from INFORMATION_SCHEMA.columns
+      where table_name = 'chw_activity_monthly__dbt_tmp161717346264'
+        
+      order by ordinal_position
+
+  
+[0m16:17:21.043660 [debug] [Thread-1 (]: SQL status: SELECT 8 in 0.344 seconds
+[0m16:17:21.130725 [debug] [Thread-1 (]: Using postgres connection "model.chw_activity_project.chw_activity_monthly"
+[0m16:17:21.132111 [debug] [Thread-1 (]: On model.chw_activity_project.chw_activity_monthly: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "chw_activity_project", "target_name": "dev", "node_id": "model.chw_activity_project.chw_activity_monthly"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "defaultdb".INFORMATION_SCHEMA.columns
+      where table_name = 'chw_activity_monthly'
+        
+        and table_schema = 'marts'
+        
+      order by ordinal_position
+
+  
+[0m16:17:21.492458 [debug] [Thread-1 (]: SQL status: SELECT 8 in 0.359 seconds
+[0m16:17:21.591761 [debug] [Thread-1 (]: Using postgres connection "model.chw_activity_project.chw_activity_monthly"
+[0m16:17:21.593227 [debug] [Thread-1 (]: On model.chw_activity_project.chw_activity_monthly: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "chw_activity_project", "target_name": "dev", "node_id": "model.chw_activity_project.chw_activity_monthly"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "defaultdb".INFORMATION_SCHEMA.columns
+      where table_name = 'chw_activity_monthly'
+        
+        and table_schema = 'marts'
+        
+      order by ordinal_position
+
+  
+[0m16:17:21.877274 [debug] [Thread-1 (]: SQL status: SELECT 8 in 0.283 seconds
+[0m16:17:21.964008 [debug] [Thread-1 (]: Writing runtime sql for node "model.chw_activity_project.chw_activity_monthly"
+[0m16:17:21.977603 [debug] [Thread-1 (]: Using postgres connection "model.chw_activity_project.chw_activity_monthly"
+[0m16:17:21.979100 [debug] [Thread-1 (]: On model.chw_activity_project.chw_activity_monthly: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "chw_activity_project", "target_name": "dev", "node_id": "model.chw_activity_project.chw_activity_monthly"} */
+
+      
+        delete from "defaultdb"."marts"."chw_activity_monthly" as DBT_INTERNAL_DEST
+        where (chv_id, report_month) in (
+            select distinct chv_id, report_month
+            from "chw_activity_monthly__dbt_tmp161717346264" as DBT_INTERNAL_SOURCE
+        );
+
+    
+
+    insert into "defaultdb"."marts"."chw_activity_monthly" ("chv_id", "report_month", "total_activities", "unique_households_visited", "unique_patients_served", "pregnancy_visits", "child_assessments", "family_planning_visits")
+    (
+        select "chv_id", "report_month", "total_activities", "unique_households_visited", "unique_patients_served", "pregnancy_visits", "child_assessments", "family_planning_visits"
+        from "chw_activity_monthly__dbt_tmp161717346264"
+    )
+  
+[0m16:17:22.235542 [debug] [Thread-1 (]: SQL status: INSERT 0 4 in 0.255 seconds
+[0m16:17:22.391275 [debug] [Thread-1 (]: On model.chw_activity_project.chw_activity_monthly: COMMIT
+[0m16:17:22.397299 [debug] [Thread-1 (]: Using postgres connection "model.chw_activity_project.chw_activity_monthly"
+[0m16:17:22.398657 [debug] [Thread-1 (]: On model.chw_activity_project.chw_activity_monthly: COMMIT
+[0m16:17:22.645040 [debug] [Thread-1 (]: SQL status: COMMIT in 0.245 seconds
+[0m16:17:22.682618 [debug] [Thread-1 (]: On model.chw_activity_project.chw_activity_monthly: Close
+[0m16:17:22.711410 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '420180e6-c0ec-4603-b40c-8523df863c9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95286319d0>]}
+[0m16:17:22.713809 [info ] [Thread-1 (]: 1 of 1 OK created sql incremental model marts.chw_activity_monthly ............. [[32mINSERT 0 4[0m in 5.99s]
+[0m16:17:22.716066 [debug] [Thread-1 (]: Finished running node model.chw_activity_project.chw_activity_monthly
+[0m16:17:22.782489 [debug] [MainThread]: Using postgres connection "master"
+[0m16:17:22.783870 [debug] [MainThread]: On master: BEGIN
+[0m16:17:22.785930 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:17:25.228584 [debug] [MainThread]: SQL status: BEGIN in 2.443 seconds
+[0m16:17:25.229678 [debug] [MainThread]: On master: COMMIT
+[0m16:17:25.230913 [debug] [MainThread]: Using postgres connection "master"
+[0m16:17:25.231869 [debug] [MainThread]: On master: COMMIT
+[0m16:17:25.491695 [debug] [MainThread]: SQL status: COMMIT in 0.259 seconds
+[0m16:17:25.492891 [debug] [MainThread]: On master: Close
+[0m16:17:25.517720 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:17:25.518765 [debug] [MainThread]: Connection 'model.chw_activity_project.chw_activity_monthly' was properly closed.
+[0m16:17:25.523822 [info ] [MainThread]: 
+[0m16:17:25.525149 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 19.12 seconds (19.12s).
+[0m16:17:25.527679 [debug] [MainThread]: Command end result
+[0m16:17:25.733214 [debug] [MainThread]: Wrote artifact WritableManifest to /home/mainavm/chw_activity_project/target/manifest.json
+[0m16:17:25.747668 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/mainavm/chw_activity_project/target/semantic_manifest.json
+[0m16:17:25.797282 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/mainavm/chw_activity_project/target/run_results.json
+[0m16:17:25.798362 [info ] [MainThread]: 
+[0m16:17:25.799806 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:17:25.801182 [info ] [MainThread]: 
+[0m16:17:25.812258 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m16:17:25.952541 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 27.986895, "process_in_blocks": "107336", "process_kernel_time": 8.833308, "process_mem_max_rss": "125064", "process_out_blocks": "1912", "process_user_time": 19.796741}
+[0m16:17:25.960435 [debug] [MainThread]: Command `dbt run` succeeded at 16:17:25.959918 after 28.10 seconds
+[0m16:17:25.961934 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95268c9100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9526cc0c20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9526cc2300>]}
+[0m16:17:25.963012 [debug] [MainThread]: Flushing usage events
+[0m16:17:28.007981 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:22:14.495362 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f14ec7aa030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f14ed144e30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f14ec5d7800>]}
+
+
+============================== 16:22:14.523069 | 0df22d46-fc68-4b14-9998-1698194e5f5b ==============================
+[0m16:22:14.523069 [info ] [MainThread]: Running with dbt=1.10.15
+[0m16:22:14.527067 [debug] [MainThread]: running dbt with arguments {'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'debug': 'False', 'log_cache_events': 'False', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'use_colors': 'True', 'printer_width': '80', 'log_format': 'default', 'fail_fast': 'False', 'static_parser': 'True', 'log_path': '/home/mainavm/chw_activity_project/logs', 'invocation_command': 'dbt test --select chw_activity_monthly', 'version_check': 'True', 'partial_parse': 'True', 'profiles_dir': '/home/mainavm/.dbt', 'introspect': 'True', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'write_json': 'True', 'warn_error': 'None', 'use_experimental_parser': 'False'}
+[0m16:22:15.327250 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0df22d46-fc68-4b14-9998-1698194e5f5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f14ec6099d0>]}
+[0m16:22:15.602183 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0df22d46-fc68-4b14-9998-1698194e5f5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f14ecc6d0a0>]}
+[0m16:22:15.608174 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m16:22:15.998644 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m16:22:16.503899 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:22:16.505042 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:22:16.768267 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0df22d46-fc68-4b14-9998-1698194e5f5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f14ead323c0>]}
+[0m16:22:17.203531 [debug] [MainThread]: Wrote artifact WritableManifest to /home/mainavm/chw_activity_project/target/manifest.json
+[0m16:22:17.213764 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/mainavm/chw_activity_project/target/semantic_manifest.json
+[0m16:22:17.302665 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0df22d46-fc68-4b14-9998-1698194e5f5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f14e9d3e870>]}
+[0m16:22:17.308500 [info ] [MainThread]: Found 1 model, 3 data tests, 1 source, 460 macros
+[0m16:22:17.309990 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0df22d46-fc68-4b14-9998-1698194e5f5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f14ea139e50>]}
+[0m16:22:17.316012 [info ] [MainThread]: 
+[0m16:22:17.326323 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:22:17.327587 [info ] [MainThread]: 
+[0m16:22:17.329096 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m16:22:17.333183 [debug] [ThreadPool]: Acquiring new postgres connection 'list_defaultdb_marts'
+[0m16:22:17.684189 [debug] [ThreadPool]: Using postgres connection "list_defaultdb_marts"
+[0m16:22:17.685359 [debug] [ThreadPool]: On list_defaultdb_marts: BEGIN
+[0m16:22:17.686422 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:22:20.143232 [debug] [ThreadPool]: SQL status: BEGIN in 2.457 seconds
+[0m16:22:20.145253 [debug] [ThreadPool]: Using postgres connection "list_defaultdb_marts"
+[0m16:22:20.146668 [debug] [ThreadPool]: On list_defaultdb_marts: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "chw_activity_project", "target_name": "dev", "connection_name": "list_defaultdb_marts"} */
+select
+      'defaultdb' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'marts'
+    union all
+    select
+      'defaultdb' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'marts'
+    union all
+    select
+      'defaultdb' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'marts'
+  
+[0m16:22:20.402339 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.255 seconds
+[0m16:22:20.409333 [debug] [ThreadPool]: On list_defaultdb_marts: ROLLBACK
+[0m16:22:20.655517 [debug] [ThreadPool]: On list_defaultdb_marts: Close
+[0m16:22:20.670461 [debug] [MainThread]: Using postgres connection "master"
+[0m16:22:20.678404 [debug] [MainThread]: On master: BEGIN
+[0m16:22:20.679359 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:22:23.018954 [debug] [MainThread]: SQL status: BEGIN in 2.339 seconds
+[0m16:22:23.020327 [debug] [MainThread]: Using postgres connection "master"
+[0m16:22:23.021899 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "chw_activity_project", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m16:22:23.283290 [debug] [MainThread]: SQL status: SELECT 0 in 0.260 seconds
+[0m16:22:23.285283 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0df22d46-fc68-4b14-9998-1698194e5f5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f14e8ca0e90>]}
+[0m16:22:23.286524 [debug] [MainThread]: On master: ROLLBACK
+[0m16:22:23.532546 [debug] [MainThread]: Using postgres connection "master"
+[0m16:22:23.533636 [debug] [MainThread]: On master: BEGIN
+[0m16:22:24.025290 [debug] [MainThread]: SQL status: BEGIN in 0.490 seconds
+[0m16:22:24.026686 [debug] [MainThread]: On master: COMMIT
+[0m16:22:24.027508 [debug] [MainThread]: Using postgres connection "master"
+[0m16:22:24.028083 [debug] [MainThread]: On master: COMMIT
+[0m16:22:24.277108 [debug] [MainThread]: SQL status: COMMIT in 0.248 seconds
+[0m16:22:24.278378 [debug] [MainThread]: On master: Close
+[0m16:22:24.300181 [debug] [Thread-1 (]: Began running node test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa
+[0m16:22:24.300999 [info ] [Thread-1 (]: 1 of 3 START test not_null_chw_activity_monthly_chv_id ......................... [RUN]
+[0m16:22:24.301998 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_defaultdb_marts, now test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa)
+[0m16:22:24.303003 [debug] [Thread-1 (]: Began compiling node test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa
+[0m16:22:24.369627 [debug] [Thread-1 (]: Writing injected SQL for node "test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa"
+[0m16:22:24.374704 [debug] [Thread-1 (]: Began executing node test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa
+[0m16:22:24.451414 [debug] [Thread-1 (]: Writing runtime sql for node "test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa"
+[0m16:22:24.457290 [debug] [Thread-1 (]: Using postgres connection "test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa"
+[0m16:22:24.459194 [debug] [Thread-1 (]: On test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa: BEGIN
+[0m16:22:24.460902 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:22:26.750553 [debug] [Thread-1 (]: SQL status: BEGIN in 2.290 seconds
+[0m16:22:26.751334 [debug] [Thread-1 (]: Using postgres connection "test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa"
+[0m16:22:26.751914 [debug] [Thread-1 (]: On test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "chw_activity_project", "target_name": "dev", "node_id": "test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select chv_id
+from "defaultdb"."marts"."chw_activity_monthly"
+where chv_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:22:26.995440 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.243 seconds
+[0m16:22:27.009563 [debug] [Thread-1 (]: On test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa: ROLLBACK
+[0m16:22:27.252852 [debug] [Thread-1 (]: On test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa: Close
+[0m16:22:27.257142 [info ] [Thread-1 (]: 1 of 3 PASS not_null_chw_activity_monthly_chv_id ............................... [[32mPASS[0m in 2.95s]
+[0m16:22:27.259827 [debug] [Thread-1 (]: Finished running node test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa
+[0m16:22:27.262691 [debug] [Thread-1 (]: Began running node test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4
+[0m16:22:27.264896 [info ] [Thread-1 (]: 2 of 3 START test not_null_chw_activity_monthly_report_month ................... [RUN]
+[0m16:22:27.266599 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa, now test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4)
+[0m16:22:27.268180 [debug] [Thread-1 (]: Began compiling node test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4
+[0m16:22:27.287889 [debug] [Thread-1 (]: Writing injected SQL for node "test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4"
+[0m16:22:27.297972 [debug] [Thread-1 (]: Began executing node test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4
+[0m16:22:27.305320 [debug] [Thread-1 (]: Writing runtime sql for node "test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4"
+[0m16:22:27.308432 [debug] [Thread-1 (]: Using postgres connection "test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4"
+[0m16:22:27.309709 [debug] [Thread-1 (]: On test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4: BEGIN
+[0m16:22:27.310955 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:22:29.840393 [debug] [Thread-1 (]: SQL status: BEGIN in 2.529 seconds
+[0m16:22:29.841823 [debug] [Thread-1 (]: Using postgres connection "test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4"
+[0m16:22:29.843232 [debug] [Thread-1 (]: On test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "chw_activity_project", "target_name": "dev", "node_id": "test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select report_month
+from "defaultdb"."marts"."chw_activity_monthly"
+where report_month is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:22:30.094722 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.250 seconds
+[0m16:22:30.099333 [debug] [Thread-1 (]: On test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4: ROLLBACK
+[0m16:22:30.347330 [debug] [Thread-1 (]: On test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4: Close
+[0m16:22:30.348646 [info ] [Thread-1 (]: 2 of 3 PASS not_null_chw_activity_monthly_report_month ......................... [[32mPASS[0m in 3.08s]
+[0m16:22:30.350799 [debug] [Thread-1 (]: Finished running node test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4
+[0m16:22:30.353175 [debug] [Thread-1 (]: Began running node test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1
+[0m16:22:30.355016 [info ] [Thread-1 (]: 3 of 3 START test not_null_chw_activity_monthly_total_activities ............... [RUN]
+[0m16:22:30.366553 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4, now test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1)
+[0m16:22:30.369179 [debug] [Thread-1 (]: Began compiling node test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1
+[0m16:22:30.388740 [debug] [Thread-1 (]: Writing injected SQL for node "test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1"
+[0m16:22:30.395413 [debug] [Thread-1 (]: Began executing node test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1
+[0m16:22:30.403310 [debug] [Thread-1 (]: Writing runtime sql for node "test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1"
+[0m16:22:30.409338 [debug] [Thread-1 (]: Using postgres connection "test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1"
+[0m16:22:30.410953 [debug] [Thread-1 (]: On test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1: BEGIN
+[0m16:22:30.412363 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:22:32.680999 [debug] [Thread-1 (]: SQL status: BEGIN in 2.268 seconds
+[0m16:22:32.682143 [debug] [Thread-1 (]: Using postgres connection "test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1"
+[0m16:22:32.682858 [debug] [Thread-1 (]: On test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "chw_activity_project", "target_name": "dev", "node_id": "test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select total_activities
+from "defaultdb"."marts"."chw_activity_monthly"
+where total_activities is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:22:32.932547 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.248 seconds
+[0m16:22:32.936603 [debug] [Thread-1 (]: On test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1: ROLLBACK
+[0m16:22:33.181632 [debug] [Thread-1 (]: On test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1: Close
+[0m16:22:33.184088 [info ] [Thread-1 (]: 3 of 3 PASS not_null_chw_activity_monthly_total_activities ..................... [[32mPASS[0m in 2.82s]
+[0m16:22:33.186248 [debug] [Thread-1 (]: Finished running node test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1
+[0m16:22:33.203215 [debug] [MainThread]: Using postgres connection "master"
+[0m16:22:33.204303 [debug] [MainThread]: On master: BEGIN
+[0m16:22:33.205474 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:22:35.531918 [debug] [MainThread]: SQL status: BEGIN in 2.326 seconds
+[0m16:22:35.533633 [debug] [MainThread]: On master: COMMIT
+[0m16:22:35.535328 [debug] [MainThread]: Using postgres connection "master"
+[0m16:22:35.536970 [debug] [MainThread]: On master: COMMIT
+[0m16:22:35.783767 [debug] [MainThread]: SQL status: COMMIT in 0.246 seconds
+[0m16:22:35.785017 [debug] [MainThread]: On master: Close
+[0m16:22:35.787362 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:22:35.788467 [debug] [MainThread]: Connection 'test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1' was properly closed.
+[0m16:22:35.789700 [info ] [MainThread]: 
+[0m16:22:35.791184 [info ] [MainThread]: Finished running 3 data tests in 0 hours 0 minutes and 18.46 seconds (18.46s).
+[0m16:22:35.795104 [debug] [MainThread]: Command end result
+[0m16:22:35.898038 [debug] [MainThread]: Wrote artifact WritableManifest to /home/mainavm/chw_activity_project/target/manifest.json
+[0m16:22:35.903108 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/mainavm/chw_activity_project/target/semantic_manifest.json
+[0m16:22:35.925625 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/mainavm/chw_activity_project/target/run_results.json
+[0m16:22:35.927249 [info ] [MainThread]: 
+[0m16:22:35.931012 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:22:35.932972 [info ] [MainThread]: 
+[0m16:22:35.935014 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m16:22:35.943025 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 21.732431, "process_in_blocks": "1128", "process_kernel_time": 3.493232, "process_mem_max_rss": "125740", "process_out_blocks": "1912", "process_user_time": 10.220556}
+[0m16:22:35.944390 [debug] [MainThread]: Command `dbt test` succeeded at 16:22:35.944078 after 21.73 seconds
+[0m16:22:35.945557 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f14ebe3b920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f14ec200e30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f14eb147f50>]}
+[0m16:22:35.946701 [debug] [MainThread]: Flushing usage events
+[0m16:22:37.058610 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:23:51.813180 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f7c82f800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f7be3ef30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f7c805f40>]}
+
+
+============================== 16:23:51.822313 | a7344b60-f735-4ace-b145-80a90d188c2b ==============================
+[0m16:23:51.822313 [info ] [MainThread]: Running with dbt=1.10.15
+[0m16:23:51.824318 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'target_path': 'None', 'empty': 'None', 'use_colors': 'True', 'indirect_selection': 'eager', 'fail_fast': 'False', 'log_format': 'default', 'printer_width': '80', 'no_print': 'None', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'write_json': 'True', 'log_path': '/home/mainavm/chw_activity_project/logs', 'invocation_command': 'dbt docs generate', 'static_parser': 'True', 'cache_selected_only': 'False', 'version_check': 'True', 'quiet': 'False', 'profiles_dir': '/home/mainavm/.dbt', 'log_cache_events': 'False', 'warn_error': 'None', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m16:23:52.967339 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a7344b60-f735-4ace-b145-80a90d188c2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f7b78f9b0>]}
+[0m16:23:53.285345 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a7344b60-f735-4ace-b145-80a90d188c2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f7b6a3020>]}
+[0m16:23:53.290870 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m16:23:53.620891 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m16:23:54.044834 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:23:54.049168 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:23:54.192591 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a7344b60-f735-4ace-b145-80a90d188c2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f7bebf470>]}
+[0m16:23:54.226258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a7344b60-f735-4ace-b145-80a90d188c2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f79b26a20>]}
+[0m16:23:54.227174 [info ] [MainThread]: Found 1 model, 3 data tests, 1 source, 460 macros
+[0m16:23:54.229592 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a7344b60-f735-4ace-b145-80a90d188c2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f7abeaa20>]}
+[0m16:23:54.234471 [info ] [MainThread]: 
+[0m16:23:54.235418 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:23:54.236312 [info ] [MainThread]: 
+[0m16:23:54.238267 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m16:23:54.243317 [debug] [ThreadPool]: Acquiring new postgres connection 'list_defaultdb_marts'
+[0m16:23:54.362957 [debug] [ThreadPool]: Using postgres connection "list_defaultdb_marts"
+[0m16:23:54.363935 [debug] [ThreadPool]: On list_defaultdb_marts: BEGIN
+[0m16:23:54.364509 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:23:56.646440 [debug] [ThreadPool]: SQL status: BEGIN in 2.282 seconds
+[0m16:23:56.647299 [debug] [ThreadPool]: Using postgres connection "list_defaultdb_marts"
+[0m16:23:56.648007 [debug] [ThreadPool]: On list_defaultdb_marts: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "chw_activity_project", "target_name": "dev", "connection_name": "list_defaultdb_marts"} */
+select
+      'defaultdb' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'marts'
+    union all
+    select
+      'defaultdb' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'marts'
+    union all
+    select
+      'defaultdb' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'marts'
+  
+[0m16:23:56.893748 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.245 seconds
+[0m16:23:56.897904 [debug] [ThreadPool]: On list_defaultdb_marts: ROLLBACK
+[0m16:23:57.158900 [debug] [ThreadPool]: On list_defaultdb_marts: Close
+[0m16:23:57.182486 [debug] [MainThread]: Using postgres connection "master"
+[0m16:23:57.187034 [debug] [MainThread]: On master: BEGIN
+[0m16:23:57.188271 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:23:59.501786 [debug] [MainThread]: SQL status: BEGIN in 2.313 seconds
+[0m16:23:59.503039 [debug] [MainThread]: Using postgres connection "master"
+[0m16:23:59.504622 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "chw_activity_project", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m16:23:59.762855 [debug] [MainThread]: SQL status: SELECT 0 in 0.257 seconds
+[0m16:23:59.766701 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a7344b60-f735-4ace-b145-80a90d188c2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f79b277a0>]}
+[0m16:23:59.768228 [debug] [MainThread]: On master: ROLLBACK
+[0m16:24:00.011747 [debug] [MainThread]: On master: Close
+[0m16:24:00.045866 [debug] [Thread-1 (]: Began running node model.chw_activity_project.chw_activity_monthly
+[0m16:24:00.047159 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_defaultdb_marts, now model.chw_activity_project.chw_activity_monthly)
+[0m16:24:00.048512 [debug] [Thread-1 (]: Began compiling node model.chw_activity_project.chw_activity_monthly
+[0m16:24:00.117126 [debug] [Thread-1 (]: Writing injected SQL for node "model.chw_activity_project.chw_activity_monthly"
+[0m16:24:00.119006 [debug] [Thread-1 (]: Began executing node model.chw_activity_project.chw_activity_monthly
+[0m16:24:00.130400 [debug] [Thread-1 (]: Finished running node model.chw_activity_project.chw_activity_monthly
+[0m16:24:00.132832 [debug] [Thread-1 (]: Began running node test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa
+[0m16:24:00.134265 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.chw_activity_project.chw_activity_monthly, now test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa)
+[0m16:24:00.135980 [debug] [Thread-1 (]: Began compiling node test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa
+[0m16:24:00.201858 [debug] [Thread-1 (]: Writing injected SQL for node "test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa"
+[0m16:24:00.205370 [debug] [Thread-1 (]: Began executing node test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa
+[0m16:24:00.208011 [debug] [Thread-1 (]: Finished running node test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa
+[0m16:24:00.209545 [debug] [Thread-1 (]: Began running node test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4
+[0m16:24:00.211097 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.chw_activity_project.not_null_chw_activity_monthly_chv_id.f1fc78fbaa, now test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4)
+[0m16:24:00.212311 [debug] [Thread-1 (]: Began compiling node test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4
+[0m16:24:00.222899 [debug] [Thread-1 (]: Writing injected SQL for node "test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4"
+[0m16:24:00.226395 [debug] [Thread-1 (]: Began executing node test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4
+[0m16:24:00.229955 [debug] [Thread-1 (]: Finished running node test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4
+[0m16:24:00.231507 [debug] [Thread-1 (]: Began running node test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1
+[0m16:24:00.233087 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.chw_activity_project.not_null_chw_activity_monthly_report_month.8ed7d888a4, now test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1)
+[0m16:24:00.234607 [debug] [Thread-1 (]: Began compiling node test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1
+[0m16:24:00.247962 [debug] [Thread-1 (]: Writing injected SQL for node "test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1"
+[0m16:24:00.250093 [debug] [Thread-1 (]: Began executing node test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1
+[0m16:24:00.251348 [debug] [Thread-1 (]: Finished running node test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1
+[0m16:24:00.254363 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:24:00.255491 [debug] [MainThread]: Connection 'test.chw_activity_project.not_null_chw_activity_monthly_total_activities.7cdb247bd1' was properly closed.
+[0m16:24:00.258935 [debug] [MainThread]: Command end result
+[0m16:24:00.511981 [debug] [MainThread]: Wrote artifact WritableManifest to /home/mainavm/chw_activity_project/target/manifest.json
+[0m16:24:00.516788 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/mainavm/chw_activity_project/target/semantic_manifest.json
+[0m16:24:00.534051 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/mainavm/chw_activity_project/target/run_results.json
+[0m16:24:00.561350 [debug] [MainThread]: Acquiring new postgres connection 'generate_catalog'
+[0m16:24:00.562119 [info ] [MainThread]: Building catalog
+[0m16:24:00.591283 [debug] [ThreadPool]: Acquiring new postgres connection 'defaultdb.information_schema'
+[0m16:24:00.609089 [debug] [ThreadPool]: Using postgres connection "defaultdb.information_schema"
+[0m16:24:00.609769 [debug] [ThreadPool]: On defaultdb.information_schema: BEGIN
+[0m16:24:00.610472 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:24:02.949875 [debug] [ThreadPool]: SQL status: BEGIN in 2.339 seconds
+[0m16:24:02.951173 [debug] [ThreadPool]: Using postgres connection "defaultdb.information_schema"
+[0m16:24:02.959953 [debug] [ThreadPool]: On defaultdb.information_schema: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "chw_activity_project", "target_name": "dev", "connection_name": "defaultdb.information_schema"} */
+
+    
+    
+
+    select
+        'defaultdb' as table_database,
+        sch.nspname as table_schema,
+        tbl.relname as table_name,
+        case tbl.relkind
+            when 'v' then 'VIEW'
+            when 'm' then 'MATERIALIZED VIEW'
+            else 'BASE TABLE'
+        end as table_type,
+        tbl_desc.description as table_comment,
+        col.attname as column_name,
+        col.attnum as column_index,
+        pg_catalog.format_type(col.atttypid, col.atttypmod) as column_type,
+        col_desc.description as column_comment,
+        pg_get_userbyid(tbl.relowner) as table_owner
+
+    from pg_catalog.pg_namespace sch
+    join pg_catalog.pg_class tbl on tbl.relnamespace = sch.oid
+    join pg_catalog.pg_attribute col on col.attrelid = tbl.oid
+    left outer join pg_catalog.pg_description tbl_desc on (tbl_desc.objoid = tbl.oid and tbl_desc.objsubid = 0)
+    left outer join pg_catalog.pg_description col_desc on (col_desc.objoid = tbl.oid and col_desc.objsubid = col.attnum)
+    where ((upper(sch.nspname) = upper('marts') and
+           upper(tbl.relname) = upper('chw_activity_monthly')) or (upper(sch.nspname) = upper('marts') and
+           upper(tbl.relname) = upper('fct_chv_activity')))
+      and not pg_is_other_temp_schema(sch.oid) -- not a temporary schema belonging to another session
+      and tbl.relpersistence in ('p', 'u') -- [p]ermanent table or [u]nlogged table. Exclude [t]emporary tables
+      and tbl.relkind in ('r', 'v', 'f', 'p', 'm') -- o[r]dinary table, [v]iew, [f]oreign table, [p]artitioned table, [m]aterialized view. Other values are [i]ndex, [S]equence, [c]omposite type, [t]OAST table
+      and col.attnum > 0 -- negative numbers are used for system columns such as oid
+      and not col.attisdropped -- column as not been dropped
+
+    order by
+        sch.nspname,
+        tbl.relname,
+        col.attnum
+[0m16:24:03.235159 [debug] [ThreadPool]: SQL status: SELECT 17 in 0.274 seconds
+[0m16:24:03.243939 [debug] [ThreadPool]: On defaultdb.information_schema: ROLLBACK
+[0m16:24:03.493564 [debug] [ThreadPool]: On defaultdb.information_schema: Close
+[0m16:24:03.545339 [debug] [MainThread]: Wrote artifact CatalogArtifact to /home/mainavm/chw_activity_project/target/catalog.json
+[0m16:24:03.617548 [debug] [MainThread]: Wrote artifact WritableManifest to /home/mainavm/chw_activity_project/target/manifest.json
+[0m16:24:03.622951 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/mainavm/chw_activity_project/target/semantic_manifest.json
+[0m16:24:03.624106 [info ] [MainThread]: Catalog written to /home/mainavm/chw_activity_project/target/catalog.json
+[0m16:24:03.633500 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 12.096949, "process_in_blocks": "3664", "process_kernel_time": 0.842915, "process_mem_max_rss": "123676", "process_out_blocks": "5256", "process_user_time": 7.667482}
+[0m16:24:03.634899 [debug] [MainThread]: Command `dbt docs generate` succeeded at 16:24:03.634565 after 12.10 seconds
+[0m16:24:03.635896 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m16:24:03.636776 [debug] [MainThread]: Connection 'defaultdb.information_schema' was properly closed.
+[0m16:24:03.641031 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f7caa4350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f7b824860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f7dc53bf0>]}
+[0m16:24:03.642487 [debug] [MainThread]: Flushing usage events
+[0m16:24:04.697266 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:24:11.763082 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd3c8c7950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd3c95e900>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd3c5c1af0>]}
+
+
+============================== 16:24:11.770268 | 93ffcccf-ffe4-4e89-8dcf-7af3d710ad17 ==============================
+[0m16:24:11.770268 [info ] [MainThread]: Running with dbt=1.10.15
+[0m16:24:11.773723 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'invocation_command': 'dbt docs serve', 'use_experimental_parser': 'False', 'log_path': '/home/mainavm/chw_activity_project/logs', 'target_path': 'None', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'static_parser': 'True', 'debug': 'False', 'printer_width': '80', 'introspect': 'True', 'log_format': 'default', 'write_json': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'quiet': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'profiles_dir': '/home/mainavm/.dbt', 'no_print': 'None', 'empty': 'None'}
+[0m16:24:12.324999 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '93ffcccf-ffe4-4e89-8dcf-7af3d710ad17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd3ad31a30>]}
+[0m16:24:12.497102 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '93ffcccf-ffe4-4e89-8dcf-7af3d710ad17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd3c255a30>]}
+[0m16:36:44.248808 [error] [MainThread]: Encountered an error:
+
+[0m16:36:44.287313 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/mainavm/chw_activity_project/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mainavm/chw_activity_project/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mainavm/chw_activity_project/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 272, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mainavm/chw_activity_project/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 303, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mainavm/chw_activity_project/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 350, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mainavm/chw_activity_project/venv/lib/python3.12/site-packages/dbt/cli/main.py", line 307, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "/home/mainavm/chw_activity_project/venv/lib/python3.12/site-packages/dbt/task/docs/serve.py", line 29, in run
+    httpd.serve_forever()
+  File "/usr/lib/python3.12/socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m16:36:44.302633 [debug] [MainThread]: Resource report: {"command_name": "serve", "command_success": false, "command_wall_clock_time": 752.7321, "process_in_blocks": "2544", "process_kernel_time": 1.68059, "process_mem_max_rss": "107796", "process_out_blocks": "3360", "process_user_time": 6.588804}
+[0m16:36:44.311768 [debug] [MainThread]: Command `dbt docs serve` failed at 16:36:44.311145 after 752.74 seconds
+[0m16:36:44.313676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd3c1b5c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd3a959c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd3a507bf0>]}
+[0m16:36:44.316960 [debug] [MainThread]: Flushing usage events
+[0m16:36:45.397797 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:58:06.284881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd6793f2270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd679120fb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd6793f13a0>]}
+
+
+============================== 16:58:06.299789 | 3e218721-4c74-4d3b-86f5-cc7167ce9c1e ==============================
+[0m16:58:06.299789 [info ] [MainThread]: Running with dbt=1.10.15
+[0m16:58:06.301439 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'printer_width': '80', 'indirect_selection': 'eager', 'profiles_dir': '/home/mainavm/.dbt', 'debug': 'False', 'quiet': 'False', 'version_check': 'True', 'log_format': 'default', 'target_path': 'None', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'use_colors': 'True', 'introspect': 'True', 'log_path': '/home/mainavm/chw_activity_project/logs', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'empty': 'None', 'invocation_command': 'dbt debug', 'write_json': 'True'}
+[0m16:58:06.361049 [info ] [MainThread]: dbt version: 1.10.15
+[0m16:58:06.363581 [info ] [MainThread]: python version: 3.12.3
+[0m16:58:06.364784 [info ] [MainThread]: python path: /home/mainavm/chw_activity_project/venv/bin/python3
+[0m16:58:06.366632 [info ] [MainThread]: os info: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39
+[0m16:58:06.576092 [info ] [MainThread]: Using profiles dir at /home/mainavm/.dbt
+[0m16:58:06.577778 [info ] [MainThread]: Using profiles.yml file at /home/mainavm/.dbt/profiles.yml
+[0m16:58:06.579048 [info ] [MainThread]: Using dbt_project.yml file at /home/mainavm/chw_activity_project/dbt_project.yml
+[0m16:58:06.582548 [info ] [MainThread]: adapter type: postgres
+[0m16:58:06.586232 [info ] [MainThread]: adapter version: 1.9.1
+[0m16:58:06.880945 [info ] [MainThread]: Configuration:
+[0m16:58:06.882228 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:58:06.883401 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:58:06.884724 [info ] [MainThread]: Required dependencies:
+[0m16:58:06.886053 [debug] [MainThread]: Executing "git --help"
+[0m16:58:06.907021 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:58:06.910578 [debug] [MainThread]: STDERR: "b''"
+[0m16:58:06.911607 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:58:06.912894 [info ] [MainThread]: Connection:
+[0m16:58:06.914186 [info ] [MainThread]:   host: pg-583808d-muragevincent39-e823.i.aivencloud.com
+[0m16:58:06.915289 [info ] [MainThread]:   port: 14040
+[0m16:58:06.919361 [info ] [MainThread]:   user: avnadmin
+[0m16:58:06.928150 [info ] [MainThread]:   database: defaultdb
+[0m16:58:06.930593 [info ] [MainThread]:   schema: marts
+[0m16:58:06.931623 [info ] [MainThread]:   connect_timeout: 10
+[0m16:58:06.933010 [info ] [MainThread]:   role: None
+[0m16:58:06.934187 [info ] [MainThread]:   search_path: None
+[0m16:58:06.935482 [info ] [MainThread]:   keepalives_idle: 0
+[0m16:58:06.937479 [info ] [MainThread]:   sslmode: require
+[0m16:58:06.938387 [info ] [MainThread]:   sslcert: None
+[0m16:58:06.939226 [info ] [MainThread]:   sslkey: None
+[0m16:58:06.947159 [info ] [MainThread]:   sslrootcert: None
+[0m16:58:06.948271 [info ] [MainThread]:   application_name: dbt
+[0m16:58:06.949329 [info ] [MainThread]:   retries: 1
+[0m16:58:06.950619 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m16:58:07.238702 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m16:58:07.336739 [debug] [MainThread]: Using postgres connection "debug"
+[0m16:58:07.337612 [debug] [MainThread]: On debug: select 1 as id
+[0m16:58:07.338228 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:58:09.728103 [debug] [MainThread]: SQL status: SELECT 1 in 2.390 seconds
+[0m16:58:09.729713 [debug] [MainThread]: On debug: Close
+[0m16:58:09.730702 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:58:09.732117 [info ] [MainThread]: [32mAll checks passed![0m
+[0m16:58:09.736234 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 3.7296288, "process_in_blocks": "65544", "process_kernel_time": 1.557602, "process_mem_max_rss": "115412", "process_out_blocks": "16", "process_user_time": 5.902494}
+[0m16:58:09.736923 [debug] [MainThread]: Command `dbt debug` succeeded at 16:58:09.736778 after 3.73 seconds
+[0m16:58:09.737327 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:58:09.737789 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd67b7be4b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd67973bec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd67d0bb6b0>]}
+[0m16:58:09.738274 [debug] [MainThread]: Flushing usage events
+[0m16:58:10.749612 [debug] [MainThread]: An error was encountered while trying to flush usage events
