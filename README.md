@@ -68,13 +68,6 @@ dbt docs generate && dbt docs serve
 
 ---
 
-### 7. Raw Source Data (`staging.fct_chv_activity`)
-<img width="1920" height="400" alt="Raw Data" src="https://github.com/user-attachments/assets/<your-raw-data-screenshot-id>" />  
-*Raw ingested CHV activity records before transformation.*
-
----
-
-
 Built by **Maina Murage** 
 
 
