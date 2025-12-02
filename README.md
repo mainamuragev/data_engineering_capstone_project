@@ -1,7 +1,8 @@
 # CHW Activity Project (dbt + Postgres)
 
 ## Architecture
-<img width="1536" height="1024" alt="CHW activity data" src="https://github.com/user-attachments/assets/c88bd2ee-c170-46f1-8049-7684dac5a5b1" />
+<img width="1536" height="1024" alt="A wide-format, high-" src="https://github.com/user-attachments/assets/62976531-bfa0-40ec-9494-19794cfae964" />
+
 
 This project models Community Health Worker (CHW) activity data using **dbt** with a **Postgres warehouse**.  
 Raw data flows into staging models, then into marts for analytics-ready outputs.
