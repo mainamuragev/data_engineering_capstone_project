@@ -55,14 +55,16 @@ dbt docs generate && dbt docs serve
 *Docs generated and served locally.*
 
 ---
+### 5.DBT  UI
+<img width="1920" height="1080" alt="Screenshot 2025-12-01 162556" src="https://github.com/user-attachments/assets/55b7aa67-8e3b-4c67-9c67-b0398bd47f94" />
 
-### 5. Lineage Graph
+### 6. Lineage Graph
 <img width="1920" height="1080" alt="Lineage Graph" src="https://github.com/user-attachments/assets/50c5604c-2d74-4c26-8ec8-641a9cf581a2" />  
 *Shows flow from raw staging → marts.*
 
 ---
 
-### 6. Aggregated Monthly Rollup (`marts.chw_activity_monthly`)
+### 7. Aggregated Monthly Rollup (`marts.chw_activity_monthly`)
 <img width="1920" height="170" alt="Monthly Rollup" src="https://github.com/user-attachments/assets/e6267e9f-a089-4911-ac31-80e64a23c53b" />  
 *Monthly activity counts per CHV.*
 
